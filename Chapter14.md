@@ -15,5 +15,8 @@ Inspired by the study of structures of the visual cortex
 1. Performs just like convolutional layers, but without weights, only apllied by an aggregation function such as max or mean.
 2. max pooling layers: can provide some translation invariance, even a small amount of rotational invariance and a slight scale invariance.
 3. Tensorflow implementation: max_pool/ave_pool = keras.layers.MaxPool2D/AvgPool2D(pool_size=2), strides(default)=kernel size. Generally, max pool performs better than Avg pool, since it enhance the strongest signals. Depthwise max pool: tf.nn.max_pool()
-4. 
+
+## CNN Architectures
+1. Few convonlution layers (ReLUs) --> Pooling layer --> Few convolution layers (ReLUs) --> Pooling layer --> Fully connected (ReLUs)
+2. 
 
