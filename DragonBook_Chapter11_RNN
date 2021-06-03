@@ -1,0 +1,5 @@
+# Chapter 11 RNN
+## LSTM
+  1. LSTM 不同门的意义：遗忘门控制前面时间的影响，输入门控制当前输入的影响，输出门确定最终的输出与当前记忆状态及输入的关系
+  2. GRU：门控循环网络Gated Recurrent Unit, 状态向量和输出向量合并。复位门和更新门，复位门控制上一时间戳状态进入GRU的量，更新门平衡上一状态和当前新输出对最总输出影响的占比。
+  3. Implementation: keras.layers.GRUCell, keras.layers.GRU
